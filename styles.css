@@ -1,0 +1,249 @@
+.logo img {   
+           width: 100px;
+           height: auto; 
+}
+main {
+    background-color: rgb(198, 228, 238);
+}
+nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center; /* Centra horizontalmente */
+    }
+nav li {
+        margin: 0 10px; /* Añade espacio entre los elementos */
+        font-size: 26px; /* Ajusta el tamaño de la fuente */
+    }
+    nav a {
+        text-decoration: none;
+        color: #e630bb; /* Cambia el color del texto */
+        
+    }
+    nav a:hover {
+        text-decoration: underline;
+        color: #007bff; /* Cambia el color al pasar el ratón */
+    }
+    .acerca-imagen {
+      text-align: center;
+      width: 80%; /* Ajusta el ancho según tus necesidades */
+      margin: 0 auto;
+    }
+    .imagen1 {
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto;
+    }
+    section.seccion-1 {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 2em;
+     }
+     
+     .acerca-de {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+     }
+     
+     .texto {
+      text-align: center;
+      max-width: 80%;
+      margin: 20px auto;
+    }
+  
+     .acerca-imagen img {
+        max-width: 100%;
+        height: auto;
+        max-width: 300px;
+     }
+     
+     .seccion-2 img {
+        width: 100%;
+        display: block;
+        margin: 0;
+        padding: 0;
+     }
+     /*------*/
+     
+     /*--- estilos para tarjetas ---*/
+     .seccion-3 {
+        padding: 20px;
+     }
+      .titulo-s3 {
+        color: #e726b6;
+        margin-bottom: 20px; /* Añade espacio debajo del título */
+     }
+     
+     .tarjetas {
+        display: flex; /* Coloca las tarjetas en una fila */
+        flex-wrap: wrap; /* Permite que las tarjetas se envuelvan a nuevas líneas */
+        gap: 20px; /* Espacio entre cada tarjeta */
+        justify-content: flex-start; /* Alinea las tarjetas a la izquierda, no distribuye el espacio */
+     }
+      .tarjeta {
+        flex: 0 1 30%; /* Establece que las tarjetas deben ocupar aproximadamente un 30% del contenedor */
+        box-sizing: border-box; /* Asegura que el padding se incluya en el tamaño total de la tarjeta */
+        padding: 10px; /* Espacio dentro de cada tarjeta */
+        display: flex; /* Usamos flex para que la imagen y el texto se comporten como un contenedor flexible */
+        flex-direction: column; /* Asegura que la imagen y el texto estén uno debajo del otro */
+        min-width: 250px; /* Garantiza que la tarjeta no se vuelva demasiado pequeña */
+        max-width: 33%; /* Garantiza que no ocupe más del 33% del contenedor */
+     }
+     
+     .imagen-tarjeta img {
+        width: 200px; /* Ajusta el tamaño de la imagen */
+        height: auto; /* Mantiene la proporción de la imagen */
+        object-fit: cover; /* Cubre el área de la imagen sin distorsionar */
+        border-radius: 10px;
+     }
+     
+     .texto-tarjeta {
+        margin-top: 10px; /* Espacio entre la imagen y el texto */
+        flex-grow: 0; /* Evita que el texto se expanda */
+        overflow: hidden; /* Asegura que el contenido que sobrepase el contenedor no sea visible */
+        text-overflow: ellipsis; /* Opcional: agrega puntos suspensivos si el texto es demasiado largo */
+      }
+     
+     .texto-tarjeta a{
+        color: #63c0f3;
+        font-weight: bold;
+     }
+     /*------*/
+     
+     /*--- estilos para footer ---*/
+     footer {
+        background-color: #f3aaf0;
+        width: 100%;
+     }
+     
+     footer a {
+        color: rgb(69, 150, 226);
+     }
+     
+     #footer {
+        padding: 2em;
+     }
+     
+     #footer h3 {
+        color: rgb(21, 136, 136);
+     }
+     
+     nav {
+        display: block;
+     }
+     
+     #footer nav ul {
+        margin: 0;
+        padding: 0;
+     }
+     
+     #footer nav ul li {
+        margin-top: 0.3em;
+     }
+     
+     #footer nav ul li a {
+        color: #3cb7f0;
+     }
+     
+     a i.fa-solid.fa-heart.fixed {
+        position: fixed;
+        bottom: 22px;
+        right: 39px;
+     }
+     
+     /*------*/
+     
+     #check {
+        display: none;
+     }
+     
+     .checkbtn {
+        font-size: 25px;
+        color: rgb(96, 205, 245);
+        float: right;
+        line-height: 80px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+     }
+     
+     /*------*/
+     @media(max-width: 768px){
+        /* estilos para la seccion acerca-de*/
+        .seccion-1 .acerca-de {
+            display: block;  /* Cambia a bloque, apilando los divs */
+        }
+     
+        .seccion-1 .acerca-de .texto,
+        .seccion-1 .acerca-de .acerca-imagen {
+            width: 100%;  /* Los divs ocupan el 100% del ancho disponible */
+            margin-bottom: 20px;  /* Añade espacio entre los divs */
+            justify-content: center;
+            text-align: center;
+        }
+     
+        /* Opcionalmente, puedes ajustar el tamaño de la imagen */
+        .seccion-1 .acerca-de .acerca-imagen img {
+            width: 100%;  /* Asegura que la imagen se ajuste al ancho de la pantalla */
+            height: auto;  /* Mantiene la proporción de la imagen */
+        }
+        /*------*/
+       
+        /* estilos para la barra de navegación*/
+        header {
+            background-color: rgb(135, 180, 222);
+        }
+     
+        .acerca-de {
+            text-align: center;
+        }
+     
+        .acerca-imagen {
+            margin-bottom: 40px;
+        }
+     
+        /*h2.fuente-acento{
+            text-align: center;
+        }*/
+     
+        .checkbtn {
+            display: block;
+            font-size: 25px;
+            color: blueviolet;
+        }
+     
+        #encabezado ul {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background-color: #ddbde5;
+            top: 80px;
+            left: 100%;
+            text-align: center;
+            transition: all 0.5s;
+        }
+     
+        #check:checked ~ ul {
+            left: 0;
+            display: block;
+        }
+     
+        #encabezado nav ul li{
+            display: block;
+            margin: 50px 0;
+            line-height: 30px;
+        }
+     
+        #encabezado nav ul li a {
+            font-size: 20px;
+        }
+     
+        #check:checked ~ .checkbtn {
+            color: #77ace1;
+        }
+     }
+    
